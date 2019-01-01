@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Switch
+            android:id="@+id/openChatService"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="开启微信和QQ通知监听的权限" />
+
+        <Switch
+            android:id="@+id/openKeyword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="开启通知获取关键字监听" />
+
+        <EditText
+            android:id="@+id/etKeyword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="输入需要监听关键字"
+            android:visibility="invisible" />
+
+        <Switch
+            android:id="@+id/openMusic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="开启监听通知获取关键字后播放音乐"
+            android:visibility="gone" />
+
+        <Switch
+            android:id="@+id/openCallPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="开启监听通知获取关键字后拨号到某电话"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>
