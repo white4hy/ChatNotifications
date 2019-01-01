@@ -18,7 +18,6 @@ import android.view.View;
 import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.Switch;
-import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -139,8 +138,10 @@ public class MainActivity extends AppCompatActivity {
 
         @Override
         public void onReceive(Context context, Intent intent) {
-            MediaPlayer mediaPlayer = MediaPlayer.create(MainActivity.this, R.raw.gnzw);
-            mediaPlayer.start();
+            if(openMusic.isChecked()){
+                MediaPlayer mediaPlayer = MediaPlayer.create(MainActivity.this, R.raw.gnzw);
+                mediaPlayer.start();
+            }
 
         }
 
